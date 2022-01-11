@@ -5,14 +5,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.paging.LoadState
-import com.example.hiltwmvvm.R
 import com.example.hiltwmvvm.databinding.ActivityMainBinding
-import com.example.hiltwmvvm.domain.use_case.MovieUseCase
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 
 @AndroidEntryPoint
@@ -27,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
 
         val adapter = MovieAdapter()
 
