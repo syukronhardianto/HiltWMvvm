@@ -6,7 +6,7 @@ import com.example.hiltwmvvm.data.model.MovieData
 import com.example.hiltwmvvm.domain.repository.MovieRepository
 import javax.inject.Inject
 
-class MovieUseCase @Inject constructor(
+class GetMovieListUseCase @Inject constructor(
     private val repository: MovieRepository
 ) {
 
